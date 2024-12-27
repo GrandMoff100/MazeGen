@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mazegen"
+version = "0.1.0"
+description = "A (better) package to generate mazes"
+authors = ["Nate <nlarsen23.student@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+networkx = "^3.4.2"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.10.0"
+funcy = "^2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
